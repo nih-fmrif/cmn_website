@@ -28,6 +28,7 @@ RUN apt-get update && \
 	python3-pip \
 	nginx \
 	supervisor \
+	tmux \
 	sqlite3 && \
 	pip3 install -U pip setuptools && \
    rm -rf /var/lib/apt/lists/*
@@ -51,7 +52,7 @@ COPY . /home/docker/code/
 
 # install django, normally you would remove this step because your project would already
 # be installed in the code/app/ directory
-RUN django-admin.py startproject website /home/docker/code/app/
+#RUN django-admin.py startproject website /home/docker/code/app/
 
 EXPOSE 80
 CMD ["supervisord", "-n"]
