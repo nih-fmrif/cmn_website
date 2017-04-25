@@ -51,6 +51,7 @@ RUN pip3 install -r /home/docker/code/app/requirements.txt
 COPY . /home/docker/code/
 
 # move static files to the location nginx expects to find them
+RUN mkdir /home/docker/code/app/static
 RUN python3 /home/docker/code/app/manage.py collectstatic
 
 # install django, normally you would remove this step because your project would already
