@@ -42,8 +42,8 @@ COPY nginx-app-ssl.conf /etc/nginx/sites-available/default
 COPY supervisor-app.conf /etc/supervisor/conf.d/
 
 # Copy certs in
-COPY ../crn_private/certs/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
-COPY ../crn_private/certs/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
+COPY ./crn_private/certs/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
+COPY ./crn_private/certs/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
 
 # COPY requirements.txt and RUN pip install BEFORE adding the rest of your code, this will cause Docker's caching mechanism
 # to prevent re-installing (all your) dependencies when you made a change a line or two in your app.
@@ -63,4 +63,5 @@ RUN python3 /home/docker/code/app/manage.py collectstatic
 #RUN django-admin.py startproject website /home/docker/code/app/
 
 EXPOSE 80
+EXPOSE 443
 CMD ["supervisord", "-n"]
