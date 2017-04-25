@@ -25,13 +25,11 @@ touched most files here.
 * `docker run -d -p 80:80 --name webapp webapp`
 * go to 127.0.0.1 to see if works
 
-#### Build with python2
-* `docker build -f Dockerfile-py2 -t webapp .`
-* `docker run -d -p 80:80 --name webapp webapp`
-* go to 127.0.0.1 to see if works
-
 #### Alternate run command for bash session in container with current directory mounted in place of container's code directory (useful for developing)
-* docker run -it -p 80:80 -v $PWD:/home/docker/code --name webapp --entrypoint=/bin/bash webapp
+* `docker run -it -p 80:80 -v $PWD:/home/docker/code --name webapp --entrypoint=/bin/bash webapp`
+
+### Kill a running conatainer in the case you need to restart
+* `docker rm -vf webapp`
 
 ### How to insert your application
 
