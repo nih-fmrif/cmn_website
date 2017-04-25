@@ -1,12 +1,22 @@
+{% load staticfiles %}
 <!-- frontpage/templates/index.html -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Multimodal Neuroimaging (MMNI)</title>
+        <title>Center for Multimodal Neuroimaging</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/frontpage.css' %}">
     </head>
     <body>
-        <h2>Peter Bandettini, Ph.D., Director</h2>
+    <div class="page-header">
+        <h1 class="title">CMN</h1>
+        <p class= "subtitle"> Center for Multimodal Neuroimaing</p>
+    </div>
+    <div class="content">
+    <h1>Center for Multimodal Neuroimaging (CMN)</h1>
+    <h2>Peter Bandettini, Ph.D., Director</h2>
 
     <p>The NIMH has a wealth of expertise in neuroimaging, data processing, and neuromodulation, and has an even larger number of investigators that would stand to benefit from enhanced access, harmonized data formats, the opportunity for collaboration, and simply more communication across core facilities.&nbsp;&nbsp;</p>
 
@@ -39,5 +49,6 @@
         <li><strong>Non-invasive Neuromodulation Team</strong> -- Holly Lisanby</li>
         <li><strong>Statistical Genomics Core</strong> -- Yin Yao</li>
     </ul>
+    </div>
     </body>
 </html>

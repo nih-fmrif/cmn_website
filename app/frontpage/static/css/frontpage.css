@@ -1,0 +1,31 @@
+.page-header {
+    background-color: #005395;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    border-bottom: 5px solid #3577AB;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.page-header p.subtitle{
+	color: #ffffff;
+	font-size: 12;
+	font-style: italic;
+}
+
+.content{
+	padding-left: 80px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.content h1{
+	font-size: 24pt;
+}
+
+.content h2{
+	font-size: 18pt;
+}
