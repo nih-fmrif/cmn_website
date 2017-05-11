@@ -18,7 +18,7 @@ https://uwsgi.readthedocs.org/en/latest/tutorials/Django_and_nginx.html
 ### Kill a running conatainer in the case you need to restart
 * `docker rm -vf webapp`
 
-## For crn admins
+## For cmn admins
 This repo will get you most of the files you need to set up the website. 
-You will additionally need the files in https://github.com/nih-fmrif/crn_private.
-Instructions for setting up the website with ssl certs is in crn_private.
+You will additionally need the files in https://github.com/nih-fmrif/cmn_private.
+Instructions for setting up the website with ssl certs is in cmn_private.
