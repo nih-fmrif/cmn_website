@@ -1,77 +1,54 @@
+{% extends "base.html" %}
 {% load staticfiles %}
-<!-- frontpage/templates/index.html -->
-<!DOCTYPE html>
-<html lang=en>
-    <head>
-        <meta charset=utf-8>
-        <title>Center for Multimodal Neuroimaging</title>
-		<link rel=stylesheet href=https://fonts.googleapis.com/css?family=Open+Sans:400,700>
-        <link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css>
-        <link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css>
-        <link rel=stylesheet href="{% static 'css/frontpage.css' %}">
-    </head>
-    <body>
-    <header class=page-header-container>
-		<div class=page-header-top>
-			<h1 class="title"><img alt="Center for Multimodal Neuroimaging" src="{% static 'img/cmn-logo.png' %}"></h1>
-			<a href="mailto:nimhdsst@mail.nih.gov?subject=CMN" target=_blank>Contact</a>
-		</div>
-		<div class=page-header-bottom>
-			<h2>Center for Multimodal Neuroimaging</h2>
-			<img alt="" src="{% static 'img/brains.jpg' %}">
-		</div>
-    </header>
-    <main class=content>
-		<section class=two-col>
-			<div class=columns>
-				<div class=col>
-					<h2>The MNC duties:</h2>
+{% block exheader %}
+	<div class=page-header-bottom>
+		<h2>Center for Multimodal Neuroimaging</h2>
+		<img alt="" src="{% static 'img/brains.jpg' %}">
+	</div>
+{% endblock exheader %}
+{% block content %}
+	<section class=two-col>
+		<div class=columns>
+			<div class=col>
+				<h2>The MNC duties:</h2>
 
-					<ul>
-						<li>Holding quarterly meetings of members of associated Cores and Teams.</li>
-						<li>Identifying technical and thematic overlap and complementarity among the Cores and Teams.</li>
-						<li>Stimulating research using multi-modal techniques.</li>
-						<li>Aiding in sharing resources and data, enhancing user options, and opening up novel avenues of research.</li>
-						<li>Maintaining this website which will serve as a clearinghouse of available links, references, and tools that apply across all the Cores and Teams.</li>
-					</ul>
-				</div>
-				<div class=col>
-					<h2>Component Cores and Teams</h2>
-
-					<ul>
-						<li><strong><a href="http://fmrif.nimh.nih.gov/">fMRI Core Facility (FMRIF)</a></strong>&mdash; Peter Bandettini</li>
-						<li><strong>Data Science and Sharing Team</strong> &mdash; Adam Thomas</li>
-						<li><strong>Machine Learning Team</strong> &mdash; Francisco Pereira</li>
-						<li><a href="http://sscc.nimh.nih.gov/"><strong>Scientific and Statistical Computing Core (SSCC)</strong></a> &mdash; Bob Cox</li>
-						<li><a href="https://nif.nimh.nih.gov/"><strong>Neurophyisology Imaging Core</strong></a> &mdash; David Leopold</li>
-						<li><a href="http://kurage.nimh.nih.gov/"><strong>MEG Core</strong></a> &mdash; Richard Coppola</li>
-						<li><a href="https://www.nimh.nih.gov/labs-at-nimh/research-areas/clinics-and-labs/mib/smrs/index.shtml"><strong>Section on Magnetic Resonance Spectroscopy</strong></a> &mdash; Jun Shen</li>
-						<li><strong>Non-invasive Neuromodulation Team</strong> &mdash; Holly Lisanby</li>
-						<li><strong>Statistical Genomics Core</strong> &mdash; Yin Yao</li>
-					</ul>
-				</div>
+				<ul>
+					<li>Holding quarterly meetings of members of associated Cores and Teams.</li>
+					<li>Identifying technical and thematic overlap and complementarity among the Cores and Teams.</li>
+					<li>Stimulating research using multi-modal techniques.</li>
+					<li>Aiding in sharing resources and data, enhancing user options, and opening up novel avenues of research.</li>
+					<li>Maintaining this website which will serve as a clearinghouse of available links, references, and tools that apply across all the Cores and Teams.</li>
+				</ul>
 			</div>
-		</section>
-		<article class=body>
-			<hgroup>
-				<h2>About</h2>
-				<h3>Peter Bandettini, Ph.D., Director</h3>
-			</hgroup>
+			<div class=col>
+				<h2>Component Cores and Teams</h2>
 
-			<p>The NIMH has a wealth of expertise in neuroimaging, data processing, and neuromodulation, and has an even larger number of investigators that would stand to benefit from enhanced access, harmonized data formats, the opportunity for collaboration, and simply more communication across core facilities.</p>
+				<ul>
+					<li><strong><a href="http://fmrif.nimh.nih.gov/">fMRI Core Facility (FMRIF)</a></strong>&mdash; Peter Bandettini</li>
+					<li><strong>Data Science and Sharing Team</strong> &mdash; Adam Thomas</li>
+					<li><strong>Machine Learning Team</strong> &mdash; Francisco Pereira</li>
+					<li><a href="http://sscc.nimh.nih.gov/"><strong>Scientific and Statistical Computing Core (SSCC)</strong></a> &mdash; Bob Cox</li>
+					<li><a href="https://nif.nimh.nih.gov/"><strong>Neurophyisology Imaging Core</strong></a> &mdash; David Leopold</li>
+					<li><a href="http://kurage.nimh.nih.gov/"><strong>MEG Core</strong></a> &mdash; Richard Coppola</li>
+					<li><a href="https://www.nimh.nih.gov/labs-at-nimh/research-areas/clinics-and-labs/mib/smrs/index.shtml"><strong>Section on Magnetic Resonance Spectroscopy</strong></a> &mdash; Jun Shen</li>
+					<li><strong>Non-invasive Neuromodulation Team</strong> &mdash; Holly Lisanby</li>
+					<li><strong>Statistical Genomics Core</strong> &mdash; Yin Yao</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<article class=body>
+		<hgroup>
+			<h2>About</h2>
+			<h3>Peter Bandettini, Ph.D., Director</h3>
+		</hgroup>
 
-			<p>The goal of the CMN is to bring together NIMH neuroimaging, processing, and neuromodulation expertise so that communication channels are further enhanced between cores, sections, units, individual staff scientists, and, importantly, users. The goals of this level of integration would be to foster collaborative bridges, create a centralized view of what’s available to users, generate questions that lend themselves to cross-modal investigation and integration, allow efficient exchange of practical information and new ideas.</p>
+		<p>The NIMH has a wealth of expertise in neuroimaging, data processing, and neuromodulation, and has an even larger number of investigators that would stand to benefit from enhanced access, harmonized data formats, the opportunity for collaboration, and simply more communication across core facilities.</p>
 
-			<p>Members of the CMN include the NIMH-based Core Facilities in neuroimaging, image data processing, neuromodulation as well as the Machine Learning and Data Sharing Teams. It is hoped that users of these facilities will further benefit from the increased communication and synergy that the CMN brings.</p>
+		<p>The goal of the CMN is to bring together NIMH neuroimaging, processing, and neuromodulation expertise so that communication channels are further enhanced between cores, sections, units, individual staff scientists, and, importantly, users. The goals of this level of integration would be to foster collaborative bridges, create a centralized view of what’s available to users, generate questions that lend themselves to cross-modal investigation and integration, allow efficient exchange of practical information and new ideas.</p>
 
-			<p>Operationally, each Core and Team in the Center functions independent entity. The CMN will have bimonthly meetings focused on practicalities such as a creation of a harmonized data structure and processing methods to allow multimodal integration of data across modalities and to promote data sharing. This website has been created to enhance  Core and Team visibility and to provide practical information on what&rsquo;s available.</p>
-		</article>
-    </main>
-	<footer class=frontpage-footer>
-		<ul class=sponsor-logos>
-			<li><a href=https://www.nimh.nih.gov/labs-at-nimh/index.shtml target=_blank><img alt="National Institute of Mental Health" src="{% static 'img/nih-nimh-logo.png' %}"></a></li>
-			<li><a href=https://www.hhs.gov target=_blank><img alt="Department of Health and Human Services" src="{% static 'img/dhhs-logo.png' %}"></a></li>
-		</ul>
-	</footer>
-    </body>
-</html>
+		<p>Members of the CMN include the NIMH-based Core Facilities in neuroimaging, image data processing, neuromodulation as well as the Machine Learning and Data Sharing Teams. It is hoped that users of these facilities will further benefit from the increased communication and synergy that the CMN brings.</p>
+
+		<p>Operationally, each Core and Team in the Center functions independent entity. The CMN will have bimonthly meetings focused on practicalities such as a creation of a harmonized data structure and processing methods to allow multimodal integration of data across modalities and to promote data sharing. This website has been created to enhance  Core and Team visibility and to provide practical information on what&rsquo;s available.</p>
+	</article>
+{% endblock content %}

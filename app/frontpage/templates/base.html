@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!-- frontpage/templates/index.html -->
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+		<title>{% block title %}Center for Multimodal Neuroimaging{% endblock %}</title>
+		<link rel=stylesheet href=https://fonts.googleapis.com/css?family=Open+Sans:400,700>
+        <link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css>
+        <link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css>
+        <link rel=stylesheet href="{% static 'css/frontpage.css' %}">
+    </head>
+    <body>
+    <header class=page-header-container>
+		<div class=page-header-top>
+			<h1 class="title"><img alt="Center for Multimodal Neuroimaging" src="{% static 'img/cmn-logo.png' %}"></h1>
+			<a href="mailto:nimhdsst@mail.nih.gov?subject=CMN" target=_blank>Contact</a>
+		</div>
+		{% block exheader %}{% endblock %}
+    </header>
+	<main class=content>{% block content %}{% endblock %}</main>
+	<footer class=frontpage-footer>
+		<ul class=sponsor-logos>
+			<li><a href=https://www.nimh.nih.gov/labs-at-nimh/index.shtml target=_blank><img alt="National Institute of Mental Health" src="{% static 'img/nih-nimh-logo.png' %}"></a></li>
+			<li><a href=https://www.hhs.gov target=_blank><img alt="Department of Health and Human Services" src="{% static 'img/dhhs-logo.png' %}"></a></li>
+		</ul>
+	</footer>
+    </body>
+</html>
