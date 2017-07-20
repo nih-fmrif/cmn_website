@@ -37,7 +37,7 @@ img {
 }
 
 .page-header-container .page-header-top>h1,
-.page-header-container .page-header-top>a{
+.main-menu li{
 	display: inline-block;
 	vertical-align: middle;
 	margin: auto;
@@ -49,17 +49,37 @@ img {
 	padding-bottom: 11px;
 }
 
-.page-header-container .page-header-top>a,
-.page-header-container .page-header-top>a:link,
-.page-header-container .page-header-top>a:visited{
+.main-menu {
+	display: flex;
+}
+
+.main-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	margin-right: 55px;
+}
+
+.main-menu li {
+	padding-right: 15px;
+}
+
+.main-menu li:last-child {
+	padding-right: 0;
+}
+
+.main-menu a,
+.main-menu a:link,
+.main-menu a:visited{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #fff;
 }
 
-.page-header-container .page-header-top>a:focus,
-.page-header-container .page-header-top>a:hover{
+.main-menu a:focus,
+.main-menu a:hover{
 	text-decoration: underline;
 }
 
@@ -131,4 +151,25 @@ img {
 		flex-direction: row;
 		padding: 60px 0;
 	}
+}
+
+.people {
+	list-style: none;
+	padding-left: 0;
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.people li {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.people img,
+.people .affiliation {
+	display: block;
 }
