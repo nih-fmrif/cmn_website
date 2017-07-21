@@ -13,3 +13,7 @@ class WorkshopView(TemplateView):
 class DSSTView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'dsst.html', context=None)
+
+class MLTView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'mlt.html', context=None)

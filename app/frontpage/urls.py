@@ -5,4 +5,5 @@ urlpatterns = [
     url(r'^$', views.HomePageView.as_view()),
     url(r'^workshops$', views.WorkshopView.as_view()),
     url(r'^dsst$', views.DSSTView.as_view()),
+    url(r'^mlt$', views.MLTView.as_view()),
 ]
