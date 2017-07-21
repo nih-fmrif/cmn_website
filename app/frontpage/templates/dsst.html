@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Data Science and Sharing Team | CMN{% endblock %}
+{% block content %}
+	<article class=body>
+		<h2>Data Science and Sharing Team</h2>
+		<h3>Who we are</h3>
+		<ul class=team>
+			<li>
+				<div class=photo><img alt="" width=150 height=150 src="{% static "img/people/adam-thomas.jpg"%}"><p class=name>Adam Thomas</p></div>
+				<p class=element-invisible>Profile links</p>
+				<ul>
+					<li><a href=https://fim.nimh.nih.gov/profiles/adam-thomas>FIM Profile</a></li>
+					<li><a href=https://scholar.google.com/citations?user=z89s3-8AAAAJ&hl=en>Google Scholar citations</a></li>
+					<li><a href=https://github.com/agt24>GitHub profile</a></li>
+				</ul></li>
+			<li>
+				<div class=photo><img alt="" width=155 height=150 src="{% static "img/people/dylan-nielson.jpg"%}"><p class=name>Dylan Nielson</p></div>
+				<p class=element-invisible>Profile links</p>
+				<ul>
+					<li><a href=https://scholar.google.com/citations?user=J_e8ChMAAAAJ&hl=en>Google Scholar citations</a></li>
+					<li><a href=https://github.com/Shotgunosine>GitHub profile</a></li>
+				</ul></li>
+			<li>
+				<div class=photo><img alt="" width=127 height=150 src="{% static "img/people/john-lee.jpg"%}"><p class=name>John Lee</p></div>
+				<p class=element-invisible>Profile links</p>
+				<ul>
+					<li><a href=https://github.com/leej3>GitHub profile</a></li>
+				</ul></li>
+			</li>
+		</ul>
+		<h3>What we do</h3>
+		<p>Mission statement:</p>
+		<p>The Data Science and Sharing Team supports investigators within the NIMH intramural program in creating, distributing, and leveraging large, open datasets to accelerate discovery. We provide tools and training to help the IRP embrace open science and stay on the cutting edge of novel datasets, tools, and platforms.</p>
+		<h3>Courses</h3>
+		<p>View our <a href=/workshops>Upcoming courses</a>.</p>
+		<h4>Past Courses</h4>
+		<ul class=indented-courses>
+			<li><div class=course-title><a href=https://nihpiday.nih.gov/workshop.html>Workshop on Reproducible Research</a></div>
+				<p>Basic introduction to Python and Github, two of the most popular tools for building, documenting, and sharing analysis pipelines.</p>
+				<p class=more-info><a href=https://github.com/leej3/piday_course_materials>Course materials for this workshop</a>.</p></li>
+			<li><div class=course-title><a href=https://nih-fmrif.github.io/NIMH_repro_2017/>Open and Reproducible Neuroscience</a></div>
+				<p>4-Day workshop covering Python, Github, data structuring, shared repositories, pre-print servers.</p>
+				<p class=more-info><a href=https://github.com/nih-fmrif/NIMH_repro_2017>Github repository for the course</a>.</p></li>
+			<li><div class=course-title><a href=https://nihlibrary.nih.gov/node/370156/register>Intermediate Data Wrangling in R</a></div>
+				<p>Introduction to &ldquo;tidyverse&rdquo; in R using RStudio.</p></li>
+		</ul>
+	</article>
+{% endblock content %}

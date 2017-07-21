@@ -9,3 +9,7 @@ class HomePageView(TemplateView):
 class WorkshopView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'workshop.html', context=None)
+
+class DSSTView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'dsst.html', context=None)
