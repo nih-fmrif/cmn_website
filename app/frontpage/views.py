@@ -5,3 +5,7 @@ from django.views.generic import TemplateView
 class HomePageView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'index.html', context=None)
+
+class WorkshopView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'workshop.html', context=None)
