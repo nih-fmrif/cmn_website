@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Machine Learning Team | CMN{% endblock %}
+{% block content %}
+	<article class="body team-layout">
+		<h2 class=team-title>Machine Learning Team</h2>
+		<div class=team-sidebar>
+			<h3 class=element-invisible>Who we are</h3>
+			<ul class=team>
+				<li>
+					<div class=photo><img alt="" width=123 height=150 src="{% static "img/people/francisco-pereira.jpg"%}"><p class=name>Francisco Pereira</p></div>
+					<p class=element-invisible>Profile links</p>
+					<ul>
+						<li><a href=http://www.franciscopereira.org>Web site</a></li>
+					</ul></li>
+				<li>
+					<div class=photo><img alt="" width=136 height=150 src="{% static "img/people/charles-zheng.jpg"%}"><p class=name>Charles Zheng</p></div>
+					</li>
+				<li>
+					<div class=photo><img alt="" width=150 height=150 src="{% static "img/people/patrick-mcclure.jpg"%}"><p class=name>Patrick McClure</p></div>
+					</li>
+				</li>
+			</ul>
+		</div>
+		<div class=team-main>
+			<h3 class=element-invisible>What we do</h3>
+			<p>Coming Fall 2017.</p>
+		</div>
+	</article>
+{% endblock content %}

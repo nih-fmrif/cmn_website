@@ -1,3 +1,24 @@
+.element-invisible {
+	position: absolute;
+	height:   1px;
+	width:    1px;
+	margin:   -1px;
+	border:   0;
+	padding:  0;
+	overflow: hidden;
+	clip:     rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.8;
@@ -172,4 +193,123 @@ img {
 .people img,
 .people .affiliation {
 	display: block;
+}
+
+.team-layout h2 {
+	color: #3c3c3c;
+	font-size: 2.35em;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.team-layout h3,
+.team-layout h4,
+.team-layout h5 {
+	color: #636060;
+}
+
+.team-layout h3 {
+	font-size: 1.75em;
+	margin: 20px 0;
+}
+
+.team-layout h4 {
+	font-size: 1.4em;
+}
+
+.team-layout a {
+	color: #009bf3;
+}
+
+.team-layout a:hover {
+	text-decoration: underline;
+}
+
+.team {
+	list-style: none;
+	padding-left: 0;
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team>li {
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+	display: flex;
+}
+
+.team .photo {
+	width: max-content;
+	text-align: center;
+}
+
+.team .name {
+	font-weight: bold;
+	color: #3c3c3c;
+}
+
+.team ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 25px;
+	margin-top: -8px;
+	list-style: square;
+}
+
+.team ul li {
+	margin-bottom: 4px;
+}
+
+.indented-courses {
+	list-style: none;
+	border-left: 1px solid #ddd;
+}
+
+.indented-courses .course-title {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.indented-courses .more-info {
+	font-size: 90%;
+	margin-top: -10px;
+}
+
+@supports (grid-area: auto) {
+	@media screen and (min-width: 50em) {
+		.team-layout {
+			display: grid;
+			grid-template-columns: 230px 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas: "header header" "sidebar main";
+		}
+
+		.team-layout .team-title {
+			grid-area: header;
+		}
+
+		.team-layout .team-sidebar {
+			grid-area: sidebar;
+		}
+
+		.team-layout .team {
+			justify-content: space-around;
+		}
+
+		.team-layout .team>li {
+			display: block;
+			margin: 0;
+			padding-bottom: 15px;
+		}
+
+		.team-layout .photo {
+			margin-left: 25px;
+		}
+
+		.team-layout .team-main {
+			grid-area: main;
+		}
+	}
 }
