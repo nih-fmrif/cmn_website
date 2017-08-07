@@ -1,22 +1,32 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block title %}Workshop | CMN{% endblock %}
+{% block title %}Workshops | CMN{% endblock %}
 {% block content %}
 	<article class=body>
+		<div class=workshops-workshop>
                 <h2>Neuroimaging on the browser: Embracing web technology for more open and collaborative science</h2>
                 <p><a href="https://https://github.com/akeshavan">Anisha Keshavan</a>, Monday, August 14th. Location TBD.</p>
-                <p>Dr. Keshavan is an enthusiastic member of the brain hack community, contributing to three out of 5 of the featured projects from this year's OHBM hackathon. She received her PhD in Bioengineering from University of California - San Francisco and is joining the University of Washington as a Post-Doc. Her open source projects include:
-                <ul class=indented-courses>
-                     <li><a href="https://github.com/akeshavan/mindcontrol">MindControl</a>, an app for quality conrol of neuroimaging pipeline outputs (<a href="http://mindcontrol.herokuapp.com/">Demo</a>) </li>
-                     <li><a href="https://github.com/akeshavan/mindgames">Medulina</a>, an app for crowdsourcing manual MRI tracing tasks.</li>
-                </ul>
-                <br>
-                <br>
+				<div class="workshop-desc cf">
+					<img alt="" width=150 height=150 src={% static "img/people/anisha-keshavan.jpg" %}>
+					<div>
+						<p>Dr. Keshavan is an enthusiastic member of the brain hack community, contributing to three out of 5 of the featured projects from this year's OHBM hackathon. She received her PhD in Bioengineering from University of California - San Francisco and is joining the University of Washington as a Post-Doc. Her open source projects include:</p>
+						<ul class=indented-courses>
+							<li><a href="https://github.com/akeshavan/mindcontrol">MindControl</a>, an app for quality conrol of neuroimaging pipeline outputs (<a href="http://mindcontrol.herokuapp.com/">Demo</a>) </li>
+							<li><a href="https://github.com/akeshavan/mindgames">Medulina</a>, an app for crowdsourcing manual MRI tracing tasks.</li>
+						</ul>
+					</div>
+			 </div>
+		</div>
+		<div class=workshops-workshop>
                 <h2>How not to fool yourself with p-values and other statistics</h2>
-                <p><a hrefhttps://my.gallaudet.edu/regina-nuzzo>Regina Nuzzo</a>, Date and Location TBD.</p>
-                <p>Dr. Nuzzo's writing has appeared in (links follow) the <strong><em><a href="http://tinyurl.com/z9vgok5" target="_blank">New York Times</a></em></strong>, <strong><em><a href="http://tinyurl.com/zdhvtb4" target="_blank">Los Angeles Times</a></em>, <a href="http://tinyurl.com/jj8ay3v" target="_blank"><em>ESPN the Magazine</em>,</a> <a href="http://tinyurl.com/h8vqfsu" target="_blank"><em>Reader's Digest</em></a>, <a href="http://tinyurl.com/zcuwbso" target="_blank"><em>Scientific</em> <em>American</em></a>, <em><a href="http://tinyurl.com/jm77hyz" target="_blank">New Scientist</a>, <a href="http://tinyurl.com/zvgnrgo" target="_blank">Science News</a>,</em></strong> and<strong> <a href="http://tinyurl.com/nuzzo-fooling" target="_blank"><em>Nature</em></a></strong>, among others. She was a<a href="http://tinyurl.com/jquqymv" target="_blank"> <strong>guest on NBC's Today show (video)</strong></a> in 2008 to discuss her <strong><a href="http://tinyurl.com/jgjg948" target="_blank">popular LA Times article on evolutionary psychology and dating</a></strong>. Her <strong><a href="http://tinyurl.com/nuzzo-pvalues" target="_blank">feature article on p-values</a></strong> earned her the American Statistical Association's 2014 Excellence in Statistical Reporting Award, and she facilitated the working group that produced the precedent-setting 2016 <strong><a href="http://tinyurl.com/asapvalues" target="_blank">ASA P-Values Statement.</a></p>
-                <br>
-                <br>
-                <p><a href="https://cmn.nimh.nih.gov/dsst"> Information about the Data Science and sharing team's previous workshops.</a></p>
+				<p><a href=https://my.gallaudet.edu/regina-nuzzo>Regina Nuzzo</a>, Date and Location TBD.</p>
+				<div class="workshop-desc cf">
+					<img alt="" width=150 height=150 src={% static "img/people/regina-nuzzo.jpg" %}>
+					<div>
+						<p>Dr. Nuzzo's writing has appeared in (links follow) the <a href="http://tinyurl.com/z9vgok5" rel=noopener target="_blank">New York Times</a>, <a href="http://tinyurl.com/zdhvtb4" rel=noopener target="_blank">Los Angeles Times</a>, <a href="http://tinyurl.com/jj8ay3v" rel=noopener target="_blank">ESPN the Magazine</a>, <a href="http://tinyurl.com/h8vqfsu" rel=noopener target="_blank">Reader's Digest</a>, <a href="http://tinyurl.com/zcuwbso" rel=noopener target="_blank">Scientific American</a>, <a href="http://tinyurl.com/jm77hyz" rel=noopener target="_blank">New Scientist</a>, <a href="http://tinyurl.com/zvgnrgo" rel=noopener target="_blank">Science News</a>, and <a href="http://tinyurl.com/nuzzo-fooling" rel=noopener target="_blank">Nature</a>, among others.  She was a <a href="http://tinyurl.com/jquqymv" rel=noopener target="_blank">guest on NBC's Today show (video)</a> in 2008 to discuss her <a href="http://tinyurl.com/jgjg948" rel=noopener target="_blank">popular LA Times article on evolutionary psychology and dating</a>. Her <a href="http://tinyurl.com/nuzzo-pvalues" rel=noopener target="_blank">feature article on p-values</a> earned her the American Statistical Association's 2014 Excellence in Statistical Reporting Award, and she facilitated the working group that produced the precedent-setting 2016 <a href="http://tinyurl.com/asapvalues" rel=noopener target="_blank">ASA P-Values Statement.</a></p>
+					</div>
+				</div>
+		</div>
+		<p><a href="https://cmn.nimh.nih.gov/dsst"> Information about the Data Science and sharing team's previous workshops.</a></p>
 	</article>
 {% endblock content %}

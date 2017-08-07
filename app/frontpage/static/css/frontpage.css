@@ -313,3 +313,23 @@ img {
 		}
 	}
 }
+
+.workshops-workshop {
+	margin-bottom: 3em;
+}
+
+.workshops-workshop .workshop-desc {
+}
+
+.workshops-workshop .workshop-desc>img {
+	float: left;
+	margin-right: 15px;
+	margin-top: 7px;
+}
+
+@media screen and (min-width: 40em) {
+	.workshops-workshop .workshop-desc>div {
+		float: left;
+		width: calc(100% - 165px);
+	}
+}
