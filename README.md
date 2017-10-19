@@ -22,3 +22,8 @@ https://uwsgi.readthedocs.org/en/latest/tutorials/Django_and_nginx.html
 This repo will get you most of the files you need to set up the website. 
 You will additionally need the files in https://github.com/nih-fmrif/cmn_private.
 Instructions for setting up the website with ssl certs is in cmn_private.
+
+## If you need to debug uwsgi
+Getting uwsgi logs output
+make the starupcommand in supervisor-app.conf read as follows:
+`command = /usr/local/bin/uwsgi --ini /home/docker/code/uwsgi.ini --stats :5555 --stats-http --logto /tmp/mylog.log`
