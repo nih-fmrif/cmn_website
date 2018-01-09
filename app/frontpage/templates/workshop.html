@@ -1,34 +1,118 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block title %}Workshops | CMN{% endblock %}
+{% block title %}Events | CMN{% endblock %}
 {% block content %}
-	<article class=body>
-		<h2><a href="https://nih-fmrif.github.io/2017-09-28-NIH-CMN/">NIH/NIMH Software Carpentry Workshop</a></h2>
-		<p>We will be conducting a <a href="https://software-carpentry.org/">Software Carpentry</a> workshop on September 28th and 29th. Topics covered will include using the Unix shell, building programs with Python, version control with Git, and working with structured data and visualization. For full details and schedule please visit the <a href="https://nih-fmrif.github.io/NIH-CMN-SWC-2017-09-28/">course website</a>.</p>
+	<div class="body event-list">
+		<h2>December 2017</h2>
+		<article>
+			<h3>Improving Imaging Research</h3>
+			<p><a href="http://matthew.dynevor.org/">Matthew Brett, Birmingham University</a></p>
+			<p><a href="http://talks.dynevor.org/nimh_improve_imaging.pdf">Slides</a></p>
+			<p>There is a wide gap between the ideal and the reality of scientific culture in neuroimaging. This culture gap is one reason of many to suggest that a large proportion of published imaging studies are wrong. Reasons for the culture gap include the perverse nature of academic rewards,the lack of systematic education in the foundations of imaging, and the complexity of imaging software.</p>
+			<p>Dr. Brett spoke about work we done at Berkeley to redesign education in neuroimaging with an emphasis on algorithmic thinking, sound techniques for organizing code and data, and mathematical principles of the analysis. Courses finish with projects that must be reproducible from downloading the data to the figures in the report. Dr. Brett also discussed the problem of culture in neuroimaging software, and argue that we can do more to give our students ownership of their analysis.
+			</p>
+		</article>
+		<article>
+			<h3>What can deep neural networks tell us about human brain and behavior?</h3>
+			<p>Chris Baker</p>
+			<p class=more-info>Part of the <a href=/machine-learning-in-brain-imaging-series>Machine Learning in Brain Imaging Series</a></p>
+		</article>
+		<h2>November 2017</h2>
+		<article>
+			<h3>Graph-based inference and prediction for neuroimaging</h3>
+			<p>Jonas Richiardi</p>
+			<p class=more-info>Part of the <a href=/machine-learning-in-brain-imaging-series>Machine Learning in Brain Imaging Series</a></p>
+		</article>
+		<article>
+			<h3><a href="https://incf.github.io/2017-11-09-sfn/">INCF's pre-SfN Software Carpentry Workshop</a></h3>
+			<p>The <a href="https://www.incf.org/">INCF</a> is organizing a <a href="https://software-carpentry.org/">Software Carpentry</a> workshop on November 9th and 10th at George Washington University, with some instruction contributed by John Lee and Dylan Nielson of the <a href="/dsst">DSST</a>. Topics covered will include using the Unix shell, version control with Git and building programs with Python. For full details and schedule please visit the <a href="https://incf.github.io/2017-11-09-sfn//">course website</a>. For any additional inquiries, please contact the course oranizer and lead instructor <a href="mailto:arokem@gmail.com">Dr. Ariel Rokem</a></p>
 
-		<p>Thurs, Sept 28 &amp; Fri, Sept 29, 9:30&nbsp;am &ndash; 5&nbsp;pm<br>
-			<a href="https://goo.gl/maps/eG6QuUKAAeu">NIH&nbsp;Cloisters, Rathskeller (Bldg&nbsp;60, Room&nbsp;036)</a></p>
-		<p>Note that space in the course is limited. If you'd like to attend, please contact the course organizer and lead instructor <a href="mailto:roopchansinghv@mail.nih.gov">Dr. Vinai Roopchansingh</a>.</p>
-		<br>
-		<div class=workshops-workshop>
-		<h2>Fingerprinting With Repeated Resting State Functional MRI Data </h2>
-                <p><a href="https://sites.google.com/view/bcaffo/home">Brian Caffo</a>, Tuesday, October 3rd at 11:00 AM in Building 40, Room 1201/1203.</p>
-				<div class="workshop-desc cf">
-					<img alt="Brian Caffo" width=150 height=150 src={% static "img/people/brian-caffo.jpg" %}>
-					<div>
-						<p>In the context of resting state functional MRI (rs-fMRI), fingerprinting is the practice of matching a set of subjects to themselves using only rs-fMRI correlations. The quality of the matching is then validated using the subjects' IDs. A statistical inference on this matching is often performed using permutation tests. We discuss many aspects of this process in this talk. First, we discuss desired invariances in the matching process and distance metric. Secondly, we discuss matching statistics and strategies and the resulting null distributions they induce. Thirdly, we discuss variations on the null hypothesis, which is typically left unspecified despite the calculation of a permutation based null distribution. We discuss these topics in the context of the rich history of this problem, spanning over two centuries from Montmort's matching problem.</p>
-					</div>
-			 </div>
-		</div>
-		<br>
-		<h2><a href="https://incf.github.io/2017-11-09-sfn/">INCF's pre-SfN Software Carpentry Workshop</a></h2>
-		<p>The <a href="https://www.incf.org/">INCF</a> is organizing a <a href="https://software-carpentry.org/">Software Carpentry</a> workshop on November 9th and 10th at George Washington University, with some instruction contributed by John Lee and Dylan Nielson of the <a href="/dsst">DSST</a>. Topics covered will include using the Unix shell, version control with Git and building programs with Python. For full details and schedule please visit the <a href="https://incf.github.io/2017-11-09-sfn//">course website</a>. For any additional inquiries, please contact the course oranizer and lead instructor <a href="mailto:arokem@gmail.com">Dr. Ariel Rokem</a></p>
+			<p>Thurs, Nov 9 &amp; Fri, Nov 10, 9:30&nbsp;am &ndash; 5&nbsp;pm<br>
+				<a href="https://maps.google.com/maps?q=(38.899932,%20-77.047204)">George Washinton University, Marvin Center, 800 21st Street NW, Washington, DC</a></p>
+			<p>Participation is <b>FREE</b>, but there is an application process. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjr7Vm1hCRYJVLgOI9MbxBastc9fEXaev29tZjZh0kR7DEDQ/viewform">Applications</a> are due <b>September 11th</b>.</p>
+		</article>
+		<h2>October 2017</h2>
+		<article>
+			<h3>Population imaging with resting-state fMRI: towards a big-data approach to psychiatry and psychology</h3>
+			<p>Gaël Varoquaux</p>
+			<p class=more-info>Part of the <a href=/machine-learning-in-brain-imaging-series>Machine Learning in Brain Imaging Series</a></p>
+		</article>
+		<article>
+			<h3>Brain Mapping with Machine Learning: linking brain structures to cognitive function</h3>
+			<p>Gaël Varoquaux</p>
+			<p class=more-info>Part of the <a href=/machine-learning-in-brain-imaging-series>Machine Learning in Brain Imaging Series</a></p>
+		</article>
+		<article>
+			<h3>Fingerprinting With Repeated Resting State Functional MRI Data</h3>
+			<p><a href="https://sites.google.com/view/bcaffo/home">Brian Caffo</a>, Tuesday, October 3rd, at 11:00 AM in Building 40, Room 1201/1203.</p>
+			<div class="workshop-desc cf">
+				<img alt="Brian Caffo" width=150 height=150 src={% static "img/people/brian-caffo.jpg" %}>
+				<div>
+					<p>In the context of resting state functional MRI (rs-fMRI), fingerprinting is the practice of matching a set of subjects to themselves using only rs-fMRI correlations. The quality of the matching is then validated using the subjects' IDs. A statistical inference on this matching is often performed using permutation tests. We discuss many aspects of this process in this talk. First, we discuss desired invariances in the matching process and distance metric. Secondly, we discuss matching statistics and strategies and the resulting null distributions they induce. Thirdly, we discuss variations on the null hypothesis, which is typically left unspecified despite the calculation of a permutation based null distribution. We discuss these topics in the context of the rich history of this problem, spanning over two centuries from Montmort's matching problem.</p>
+				</div>
+			</div>
+		</article>
+		<h2>September 2017</h2>
+		<article>
+			<h3><a href="https://nih-fmrif.github.io/2017-09-28-NIH-CMN/">NIH/NIMH Software Carpentry Workshop</a></h3>
+			<p>We will be conducting a <a href="https://software-carpentry.org/">Software Carpentry</a> workshop on September 28th and 29th. Topics covered will include using the Unix shell, building programs with Python, version control with Git, and working with structured data and visualization. For full details and schedule please visit the <a href="https://nih-fmrif.github.io/NIH-CMN-SWC-2017-09-28/">course website</a>.</p>
 
-		<p>Thurs, Nov 9 &amp; Fri, Nov 10, 9:30&nbsp;am &ndash; 5&nbsp;pm<br>
-			<a href="https://maps.google.com/maps?q=(38.899932,%20-77.047204)">George Washinton University, Marvin Center, 800 21st Street NW, Washington, DC</a></p>
-		<p>Participation is <b>FREE</b>, but there is an application process. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjr7Vm1hCRYJVLgOI9MbxBastc9fEXaev29tZjZh0kR7DEDQ/viewform">Applications</a> are due <b>September 11th</b>.</p>
-		<br>
-		<br>
-		<p><a href="https://cmn.nimh.nih.gov/dsst"> Information about the Data Science and sharing team's previous workshops.</a></p>
-	</article>
+			<p>Thurs, Sept 28 &amp; Fri, Sept 29, 9:30&nbsp;am &ndash; 5&nbsp;pm<br>
+				<a href="https://goo.gl/maps/eG6QuUKAAeu">NIH&nbsp;Cloisters, Rathskeller (Bldg&nbsp;60, Room&nbsp;036)</a></p>
+			<p>Note that space in the course is limited. If you'd like to attend, please contact the course organizer and lead instructor <a href="mailto:roopchansinghv@mail.nih.gov">Dr. Vinai Roopchansingh</a>.</p>
+		</article>
+		<article>
+			<h3><a href="https://github.com/nih-fmrif/nhw_ipynb">Jupyter Notebook Features</a> <a href="https://neurohackweek.github.io/nhw2017/">Neurohackweek</a></h3>
+			<p>1 hour lecture on Jupyter Notebooks from Neurohackweek2017</p>
+			<p class=more-info><a href=https://github.com/nih-fmrif/nhw_ipynb>Github repository for the lecture</a>, <a href="https://www.youtube.com/watch?v=91dfArMd17k">Video</a>.</p>
+		</article>
+		<h2>August 2017</h2>
+		<article>
+			<h3><a href=https://nih-fmrif.github.io/NIMH_repro_2017_08/>Open and Reproducible Neuroscience</a></h3>
+			<p>2-Day workshop covering Python, Github, Nipype, and DataLad.</p>
+			<p class=more-info><a href=https://github.com/nih-fmrif/NIMH_repro_2017_08>Github repository for the course</a>.</p></li>
+		</article>
+		<article>
+			<h3>How not to fool yourself with p-values and other statistics</h3>
+			<p><a href=https://my.gallaudet.edu/regina-nuzzo>Dr. Regina Nuzzo, Galludet University</a></p>
+			<p><a href=https://videocast.nih.gov/Summary.asp?Live=26200&bhcp=1>Video</a></p>
+			<p>In 2016 the American Statistical Association published its first position paper on the use of p-values, and recently this year a group of statisticians and other researchers published a paper recommending a change to the traditional definition of statistical significance. This talk discussed some of the p-values problems and solutions raised in these and other papers, illustrating the ideas through a series of examples of published studies. The need for more attention to the communication and "human factors" of statistics and data science was also discussed.</p>
+		</article>
+		<article>
+			<h3>Citizen Science and Crowdsourcing in Neuroscience: Embracing web technology for more open and collaborative science</h3>
+			<p><a href="https://github.com/akeshavan">Dr. Anisha Keshavan, eScience Institute, University of Washington</a></p>
+			<p><a href="https://youtu.be/1E5yNwnb0iI">Video</a>, <a href={% static "slides/2017_08_14_Keshavan.pdf" %}>Slides</a></p>
+			<p>Despite rapid advances in automation and machine learning there remain many tasks in biomedical science that require intensive manual work from domain experts. New web technologies have made it possible to distribute these tasks across large numbers of volunteers throughout the world. Early successes with protein folding have spurred additional projects in neuron labelling and tracing. More recently the brain imaging community has begun to explore crowdsourcing for anatomical segmentation and labelling. Dr. Kesavan discussed her recent work building these tools as well as a new collaborative project with the NIMH Data Science and Sharing Team. Dr. Keshavan's tools include: <a href="http://www.mindboggle.info/">MindBoggle</a>, <a href="https://github.com/akeshavan/mindcontrol">MindControl</a>, and <a href="https://github.com/akeshavan/mindgames">Medulina</a>.</p>
+		</article>
+		<h2>July 2017</h2>
+		<article>
+			<h3>Tree-Based Machine Learning Classifiers: Applications in Neuroimaging</h3>
+			<p>Dominic Nathan</p>
+			<p class=more-info>Part of the <a href=/machine-learning-in-brain-imaging-series>Machine Learning in Brain Imaging Series</a></p>
+		</article>
+		<h2>May 2017</h2>
+		<article>
+			<h3><a href=https://nihpiday.nih.gov/workshop.html>Workshop on Reproducible Research</a></h3>
+			<p>Basic introduction to Python and Github, two of the most popular tools for building, documenting, and sharing analysis pipelines.</p>
+			<p class=more-info><a href=https://github.com/leej3/piday_course_materials>Course materials for this workshop</a>.</p>
+		</article>
+		<h2>April 2017</h2>
+		<article>
+			<h3><a href=https://nihlibrary.nih.gov/node/370156/register>Intermediate Data Wrangling in R</a></h3>
+			<p>Introduction to &ldquo;tidyverse&rdquo; in R using RStudio.</p>
+		</article>
+		<h2>March 2017</h2>
+		<article>
+			<h3><a href=https://nih-fmrif.github.io/NIMH_repro_2017_03/>Open and Reproducible Neuroscience</a></h3>
+			<p>4-Day workshop covering Python, Github, data structuring, shared repositories, pre-print servers.</p>
+			<p class=more-info><a href=https://github.com/nih-fmrif/NIMH_repro_2017_03>Github repository for the course</a>.</p>
+		</article>
+		<h2>February 2017</h2>
+		<article>
+			<h3>Towards open and reproducible neuroscience in the age of big data</h3>
+			<p><a href="http://reproducibility.stanford.edu/team/chris-gorgolewski/">Chris Gorgolewski, Stanford Center for Reproducible Neuroscience</a></p>
+			<p><a href="https://www.slideshare.net/chrisfilo1/towards-open-and-reproducible-neuroscience-in-the-age-of-big-data">Video and Slides</a></p>
+			<p>The Stanford Center for Reproducible Neuroscience (CRN) was founded to develop a number of initiatives to help to make neuroscience more open and reproducible. These initiatives include influencing the scientific culture (e.g. The OHBM Replication Award), introducing new standards for organizing neuroimaging data (BIDS) and software (BIDS Apps) as well as building tools to assess MRI quality (MRIQC) and perform robust preprocessing of fMRI data (FMRIPREP). Tying all of those efforts together, as well as capitalizing on the experience gained from OpenfMRI and NeuroVault, is the upcoming OpenNeuro project. This novel software-as-a-service platform seeks to harness the power of high-performance computers to provide free data analysis in exchange for making data publicly available. You can find Chris on <a href="https://twitter.com/ChrisFiloG">Twitter</a>, <a href="https://scholar.google.com/citations?user=q1CgMZ8AAAAJ">Google Scholar</a>, and <a href="http://www.slideshare.net/chrisfilo1">Slide Share.</a></p>
+		</article>
+	</div>
 {% endblock content %}
