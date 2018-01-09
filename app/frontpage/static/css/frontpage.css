@@ -316,3 +316,11 @@ img {
 	margin-bottom: 3em;
 	padding-left: 20px;
 }
+
+.faux-h4 {
+	font-size: 1.4em;
+	color: #636060;
+	margin: 10px 0;
+	font-weight: 500;
+	line-height: 1.1;
+}
