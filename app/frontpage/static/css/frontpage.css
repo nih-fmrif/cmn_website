@@ -57,6 +57,14 @@ img {
 	display: flex;
 }
 
+.page-header-container .shutdown-notice {
+	border-top: 1px solid #babfc3;
+	border-bottom: 2px solid #d8d8d8;
+	background-color: #be2c2c;
+	display: flex;
+	text-align: center;
+}
+
 .page-header-container .page-header-top>h1,
 .main-menu li{
 	display: inline-block;
