@@ -324,3 +324,15 @@ img {
 	font-weight: 500;
 	line-height: 1.1;
 }
+
+.mlbis-previous-speakers h4 {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.mlbis-previous-speakers h4+p {
+	margin-top:10px;
+}
+.mlbis-previous-speakers h5 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
