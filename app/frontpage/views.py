@@ -17,3 +17,7 @@ class DSSTView(TemplateView):
 class MLTView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'mlt.html', context=None)
+
+class MLIBISView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'mlibis.html', context=None)

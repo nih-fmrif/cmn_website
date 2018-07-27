@@ -4,6 +4,11 @@
 {% block content %}
 	<article class="body team-layout">
 		<h2 class=team-title>Data Science and Sharing Team</h2>
+		<div class=team-main>
+			<h3 class=element-invisible>What we do</h3>
+			<p>The Data Science and Sharing Team supports investigators within the NIMH intramural program in creating, distributing, and leveraging large, open datasets to accelerate discovery. We provide tools and training to help the IRP embrace open science and stay on the cutting edge of novel datasets, tools, and platforms. You can find a summary of our activities over the last year in our <a href={% static "articles/DSST_2017_Annual_Report.pdf" %}>annual report</a>.</p>
+			<p class=faux-h4>View our <a href=/workshops>upcoming courses and featured talks</a>.</p>
+		</div>
 		<div class=team-sidebar>
 			<h3 class=element-invisible>Who we are</h3>
 			<ul class=team>
@@ -34,52 +39,6 @@
 						<li><a href=https://www.researchgate.net/profile/John_Lee4>Research Gate</a></li>
 					</ul></li>
 				</li>
-			</ul>
-		</div>
-		<div class=team-main>
-			<h3 class=element-invisible>What we do</h3>
-			<p>The Data Science and Sharing Team supports investigators within the NIMH intramural program in creating, distributing, and leveraging large, open datasets to accelerate discovery. We provide tools and training to help the IRP embrace open science and stay on the cutting edge of novel datasets, tools, and platforms. You can find a summary of our activities over the last year in our <a href={% static "articles/DSST_2017_Annual_Report.pdf" %}>annual report</a>.</p>
-			<h4>View our <a href=/workshops>upcoming courses and featured talks</a>.</h4>
-			<h4>Past Courses and Classes</h4>
-			<ul class=indented-courses>
-			    <li><div class=course-title><a href="https://github.com/nih-fmrif/nhw_ipynb">Jupyter Notebook Features</a> <a href="https://neurohackweek.github.io/nhw2017/">Neurohackweek, September 2017</a></div>
-					<p>1 hour lecture on Jupyter Notebooks from Neurohackweek2017</p>
-					<p class=more-info><a href=https://github.com/nih-fmrif/nhw_ipynb>Github repository for the lecture</a>, <a href="https://www.youtube.com/watch?v=91dfArMd17k">Video</a>.</p></li>
-				<li><div class=course-title><a href=https://nih-fmrif.github.io/NIMH_repro_2017_08/>Open and Reproducible Neuroscience, August 2017</a></div>
-					<p>2-Day workshop covering Python, Github, Nipype, and DataLad.</p>
-					<p class=more-info><a href=https://github.com/nih-fmrif/NIMH_repro_2017_08>Github repository for the course</a>.</p></li>
-                 <li><div class=course-title><a href=https://nihpiday.nih.gov/workshop.html>Workshop on Reproducible Research</a></div>
-					<p>Basic introduction to Python and Github, two of the most popular tools for building, documenting, and sharing analysis pipelines.</p>
-					<p class=more-info><a href=https://github.com/leej3/piday_course_materials>Course materials for this workshop</a>.</p></li>
-				<li><div class=course-title><a href=https://nih-fmrif.github.io/NIMH_repro_2017_03/>Open and Reproducible Neuroscience, March 2017</a></div>
-					<p>4-Day workshop covering Python, Github, data structuring, shared repositories, pre-print servers.</p>
-					<p class=more-info><a href=https://github.com/nih-fmrif/NIMH_repro_2017_03>Github repository for the course</a>.</p></li>
-				<li><div class=course-title><a href=https://nihlibrary.nih.gov/node/370156/register>Intermediate Data Wrangling in R</a></div>
-					<p>Introduction to &ldquo;tidyverse&rdquo; in R using RStudio.</p></li>
-			</ul>
-			<h4>Previous invited speakers</h4>
-			<ul class=indented-courses>
-				<li><div class=course-title>How not to fool yourself with p-values and other statistics</div>
-				    <p><a href=https://my.gallaudet.edu/regina-nuzzo>Dr. Regina Nuzzo, Galludet University</a></p>
-				    <p><a href=https://videocast.nih.gov/Summary.asp?Live=26200&bhcp=1>Video</a></p>
-
-					<p>In 2016 the American Statistical Association published its first position paper on the use of p-values, and recently this year a group of statisticians and other researchers published a paper recommending a change to the traditional definition of statistical significance. This talk discussed some of the p-values problems and solutions raised in these and other papers, illustrating the ideas through a series of examples of published studies. The need for more attention to the communication and "human factors" of statistics and data science was also discussed.</p>
-					</li>
-				<li><div class=course-title>Citizen Science and Crowdsourcing in Neuroscience: Embracing web technology for more open and collaborative science</div>
-				    <p><a href="https://github.com/akeshavan">Dr. Anisha Keshavan, eScience Institute, University of Washington</a></p>
-				    <p><a href="https://youtu.be/1E5yNwnb0iI">Video</a>, <a href={% static "slides/2017_08_14_Keshavan.pdf" %}>Slides</a></p>
-					<p>Despite rapid advances in automation and machine learning there remain many tasks in biomedical science that require intensive manual work from domain experts. New web technologies have made it possible to distribute these tasks across large numbers of volunteers throughout the world. Early successes with protein folding have spurred additional projects in neuron labelling and tracing. More recently the brain imaging community has begun to explore crowdsourcing for anatomical segmentation and labelling. Dr. Kesavan discussed her recent work building these tools as well as a new collaborative project with the NIMH Data Science and Sharing Team. Dr. Keshavan's tools include: <a href="http://www.mindboggle.info/">MindBoggle</a>, <a href="https://github.com/akeshavan/mindcontrol">MindControl</a>, and <a href="https://github.com/akeshavan/mindgames">Medulina</a>.</p></li>
-				<li><div class=course-title>Improving Imaging Research</div>
-				    <p><a href="http://matthew.dynevor.org/">Matthew Brett, Birmingham University</a></p>
-                    <p><a href="http://talks.dynevor.org/nimh_improve_imaging.pdf">Slides</a></p>
-					<p>There is a wide gap between the ideal and the reality of scientific culture in neuroimaging.  This culture gap is one reason of many to suggest that a large proportion of published imaging studies are wrong.  Reasons for the culture gap include the perverse nature of academic rewards,the lack of systematic education in the foundations of imaging, and the complexity of imaging software.</p>
-					<p>Dr. Brett spoke about work we done at Berkeley to redesign education in neuroimaging with an emphasis on algorithmic thinking, sound techniques for organizing code and data, and mathematical principles of the analysis. Courses finish with projects that must be reproducible from downloading the data to the figures in the report. Dr. Brett also discussed the problem of culture in neuroimaging software, and argue that we can do more to give our students ownershipof their analysis.
-					</p></li>
-				<li><div class=course-title>Towards open and reproducible neuroscience in the age of big data</div>
-				    <p><a href="http://reproducibility.stanford.edu/team/chris-gorgolewski/">Chris Gorgolewski, Stanford Center for Reproducible Neuroscience</a></p>
-                    <p><a href="https://www.slideshare.net/chrisfilo1/towards-open-and-reproducible-neuroscience-in-the-age-of-big-data">Video and Slides</a></p>
-					<p>The Stanford Center for Reproducible Neuroscience (CRN) was founded to develop a number of initiatives to help to make neuroscience more open and reproducible. These initiatives include influencing the scientific culture (e.g. The OHBM Replication Award), introducing new standards for organizing neuroimaging data (BIDS) and software (BIDS Apps) as well as building tools to assess MRI quality (MRIQC) and perform robust preprocessing of fMRI data (FMRIPREP). Tying all of those efforts together, as well as capitalizing on the experience gained from OpenfMRI and NeuroVault, is the upcoming OpenNeuro project. This novel software-as-a-service platform seeks to harness the power of high-performance computers to provide free data analysis in exchange for making data publicly available. You can find Chris on <a href="https://twitter.com/ChrisFiloG">Twitter</a>, <a href="https://scholar.google.com/citations?user=q1CgMZ8AAAAJ">Google Scholar</a>, and <a href="http://www.slideshare.net/chrisfilo1">Slide Share.</a>
-					</p></li>
 			</ul>
 		</div>
 	</article>

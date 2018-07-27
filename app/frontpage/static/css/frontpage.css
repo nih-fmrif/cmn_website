@@ -229,6 +229,7 @@ img {
 	list-style: none;
 	padding-left: 0;
 	margin: 10px 0;
+	margin-top: 2em;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -272,45 +273,15 @@ img {
 	font-weight: bold;
 }
 
+.event-list .more-info,
 .indented-courses .more-info {
 	font-size: 90%;
 	margin-top: -10px;
 }
 
-@supports (grid-area: auto) {
-	@media screen and (min-width: 50em) {
-		.team-layout {
-			display: grid;
-			grid-template-columns: 230px 1fr;
-			grid-template-rows: auto 1fr;
-			grid-template-areas: "header header" "sidebar main";
-		}
-
-		.team-layout .team-title {
-			grid-area: header;
-		}
-
-		.team-layout .team-sidebar {
-			grid-area: sidebar;
-		}
-
-		.team-layout .team {
-			justify-content: space-around;
-		}
-
-		.team-layout .team>li {
-			display: block;
-			margin: 0;
-			padding-bottom: 15px;
-		}
-
-		.team-layout .photo {
-			margin-left: 25px;
-		}
-
-		.team-layout .team-main {
-			grid-area: main;
-		}
+@media screen and (min-width: 50em) {
+	.team>li {
+		display: block;
 	}
 }
 
@@ -318,9 +289,7 @@ img {
 	margin-bottom: 3em;
 }
 
-.workshops-workshop .workshop-desc {
-}
-
+.event-list .workshop-desc>img,
 .workshops-workshop .workshop-desc>img {
 	float: left;
 	margin-right: 15px;
@@ -328,8 +297,42 @@ img {
 }
 
 @media screen and (min-width: 40em) {
+	.event-list .workshop-desc>div,
 	.workshops-workshop .workshop-desc>div {
 		float: left;
 		width: calc(100% - 165px);
 	}
+}
+
+.event-list h2 {
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+.event-list h3 {
+	margin-top: 0;
+}
+.event-list article {
+	margin-bottom: 3em;
+	padding-left: 20px;
+}
+
+.faux-h4 {
+	font-size: 1.4em;
+	color: #636060;
+	margin: 10px 0;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.mlbis-previous-speakers h4 {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.mlbis-previous-speakers h4+p {
+	margin-top:10px;
+}
+.mlbis-previous-speakers h5 {
+	margin-bottom: 0;
+	text-transform: uppercase;
 }
