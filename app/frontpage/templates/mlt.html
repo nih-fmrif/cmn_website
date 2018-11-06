@@ -2,39 +2,93 @@
 {% load staticfiles %}
 {% block title %}Machine Learning Team | CMN{% endblock %}
 {% block content %}
-	<article class="body team-layout">
-		<h2 class=team-title>Machine Learning Team</h2>
-		<div class=team-main>
-			<h3 class=element-invisible>What we do</h3>
-			<p>The mission of the Machine Learning Team (MLT) is to support researchers in the NIMH intramural research program (IRP) who want to address research problems in clinical and cognitive neuroscience using machine learning approaches.</p>
+<article class="body team-layout">
+<h2 class=team-title>Machine Learning Team</h2>
+<div class=team-main>
+  <h3 class=element-invisible>What we do</h3>
+  <p>The mission of the Machine Learning Team is to support researchers in the NIMH intramural research program who want to address research problems in clinical and cognitive neuroscience using machine learning approaches. We do this by consulting with individual researchers and guiding them in the use of the appropriate tools and methods, or by taking on the analysis process ourselves, if this is more expedient. In parallel, we develop new methods and analysis approaches, motivated by the needs of researchers or by the practical possibilities arising from advances in the field.</P>
+  <!-- We are also in the process of developing training activities on basic machine learning for dissemination to a wider audience within the NIMH IRP, since there is strong interest from trainees and principal investigators (PIs).</p>-->
+</div>
+<div class=team-sidebar>
+  <h3 class=element-invisible>Who we are</h3>
+  <ul class=team>
+    <li>
+    <div class=photo><img alt="" width=123 height=150 src="{% static "img/people/francisco-pereira.jpg"%}"><p class=name>Francisco Pereira</p></div>
+    <p class=element-invisible>Profile links</p>
+    <ul>
+      <li><a href=http://www.franciscopereira.org>web site</a></li>
+      <li><a
+      href="https://scholar.google.com/citations?user=HpbSzssAAAAJ&hl=en">Google Scholar profile</a></li>
+    </ul>
+  </li>
+  <li>
+  <div class=photo><img alt="" width=136 height=150 src="{% static "img/people/charles-zheng.jpg"%}"><p class=name>Charles Zheng</p></div>
+  <ul>
+    <li><a href="https://www.researchgate.net/profile/Charles_Zheng3">ResearchGate profile</a></li>
+    <li><a href="https://profiles.impactstory.org/u/0000-0003-3427-0845">Impactstory profile</a></li>
+  </ul>
+</li>
+<li>
+<div class=photo><img alt="" width=150 height=150 src="{% static "img/people/patrick-mcclure.jpg"%}"><p class=name>Patrick McClure</p></div>
+<ul>
+  <li><a
+  href="https://scholar.google.com/citations?user=8TKyUl4AAAAJ&hl=en&oi=ao">Google Scholar profile</a></li>
+</ul>
+</li>
+</ul>
+</div>
 
-<p>We do this by consulting with individual researchers and guiding them in the use of the appropriate tools and methods, or by taking on the analysis process ourselves, if this is more expedient. In parallel, we develop new methods and analysis approaches, motivated by the needs of researchers or by the practical possibilities arising from advances in the field. We are also in the process of developing training activities on basic machine learning for dissemination to a wider audience within the NIMH IRP, since there is strong interest from trainees and principal investigators (PIs).</p>
-		</div>
-		<div class=team-sidebar>
-			<h3 class=element-invisible>Who we are</h3>
-			<ul class=team>
-				<li>
-					<div class=photo><img alt="" width=123 height=150 src="{% static "img/people/francisco-pereira.jpg"%}"><p class=name>Francisco Pereira</p></div>
-					<p class=element-invisible>Profile links</p>
-					<ul>
-						<li><a href=http://www.franciscopereira.org>Web site</a></li>
-						<li><a href="https://scholar.google.com/citations?user=HpbSzssAAAAJ&hl=en">
-						Google Scholar citations</a></li>
-					</ul></li>
-				<li>
-					<div class=photo><img alt="" width=136 height=150 src="{% static "img/people/charles-zheng.jpg"%}"><p class=name>Charles Zheng</p></div>
-					<ul>
-						<li><a href="https://www.researchgate.net/profile/Charles_Zheng3">ResearchGate Profile</a></li>
-						<li><a href="https://profiles.impactstory.org/u/0000-0003-3427-0845">Impactstory Profile</a></li>
-					</ul>
-					</li>
-				<li>
-					<div class=photo><img alt="" width=150 height=150 src="{% static "img/people/patrick-mcclure.jpg"%}"><p class=name>Patrick McClure</p></div>
-					<ul>
-					<li><a href="https://dblp.org/pers/hd/m/McClure:Patrick">DBLP Entry</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</article>
+<h3>Selected publications by team members</h3>
+
+<ul>
+  <li><a href=https://arxiv.org/abs/1805.10863>"Distributed Weight Consolidation: A Brain Segmentation Case Study"</a>
+  <BR>McClure P., Zheng C., Kaczmarzyk J., Rogers-Lee J., Ghosh S., Nielson D., Bandettini P., Pereira F.
+  <BR>in Proceedings of the Neural Information Processing Systems conference, 2018
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/pereira2018.pdf>"Toward a universal decoder of linguistic meaning from brain activation"</a>
+  <BR>Pereira F., Lou B., Pritchett B., Ritter S., Gershman S., Kanwisher N., Botvinick M., Fedorenko E.
+  <BR>Nature Communications 9 (963), 2018
+  </li>
+  <li><a href=https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01551/full>"Recurrent Convolutional Neural Networks: A Better Model of Biological Object Recognition"</a>
+  <BR>Spoerer C., McClure P., Kriegeskorte N.
+  <BR>Frontiers in Psychology, 8, 1551, 2017
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/evaluation.pdf>"A comparative evaluation of off-the-shelf distributed semantic representations for modelling behavioural data"</a>
+  <BR>Pereira F., Gershman S., Ritter S., Botvinick M.
+  <BR>Cognitive Neuropsychology 33.3-4: 175-190, 2016
+  </li>
+  <li><a href=https://www.frontiersin.org/articles/10.3389/fncom.2016.00131/full>"Representational distance learning for deep neural networks"</a>
+  <BR>McClure P., Kriegeskorte N.
+  <BR>Frontiers in Computational Neuroscience, 10, 131, 2016
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/aij.pdf>"Using Wikipedia to produce semantic feature representations of concrete concepts in neuroimaging experiments"</a>
+  <BR>Pereira F., Detre G., Botvinick M.
+  <BR>Artificial Intelligence Journal, 194: 240-252 (2013)
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/nips.pdf>"A systematic approach to extracting semantic information from functional MRI data"</a>
+  <BR>Pereira F., Botvinick M.
+  <BR>in Proceedings of the Neural Information Processing Systems conference, 2012
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/nips.pdf>"Early assessment of malignant lung nodules based on the spatial analysis of detected lung nodules"</a>
+  <BR>El-Baz A., Soliman A., McClure P., Gimel'farb G., Abo El-Ghar M., Falk R.
+  <BR>in IEEE International Symposium on Biomedical Imaging (ISBI), 2012
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/fnhum-05-00072.pdf>"Generating text from functional brain images"</a>
+  <BR>Pereira F., Detre G., Botvinick M.
+  <BR>Frontiers in Human Neuroscience 5:72, 2011
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/science.pdf>"Reproducibility Distinguishes Conscious from Nonconscious Neural Representations"</a>
+  <BR>Schurger A., Pereira F., Treisman A., Cohen J.D.
+  <BR>Science, 327: 97-99, 2010
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/tutorial.pdf>"Machine learning classifiers and fMRI: a tutorial overview"</a>
+  <BR>Pereira F., Mitchell T., Botvinick M..
+  <BR>NeuroImage, Volume 45, Issue 1, Supplement 1, Pages S199-S209, 2009
+  </li>
+  <li><a href=http://www.franciscopereira.org/Papers/icml.pdf">"The Support Vector Decomposition Machine"</a>
+  <BR>Pereira F., Gordon G.
+  <BR>in Proceedings of International Conference on Machine Learning, 2006
+  </li>
+</ul>
+</article>
 {% endblock content %}
